@@ -1,20 +1,23 @@
 window.onload = function (){
 	 
-	 //Global var
+	 //Global var 
+	 
 	 var seconds = 00;
-	 var tens = 00;
+	 var tens    = 00;
 	 
 	//Local var
-	var appendTens = document.getElementById("tens");
+	
+	var appendTens    = document.getElementById("tens");
 	var appendSeconds = document.getElementById("seconds");
 	
-	var buttonStart = document.getElementById("button-start");
-	var buttonStop  = document.getElementById("button-stop");
-	var buttonReset = document.getElementById("button-reset");
+	var buttonStart   = document.getElementById("button-start");
+	var buttonStop    = document.getElementById("button-stop");
+	var buttonReset   = document.getElementById("button-reset");
 	
 	var Interval;
 	
 	/* start Timer*/
+	
 	function startTimer(){
 		tens++;
 		if(tens < 9){
@@ -25,7 +28,7 @@ window.onload = function (){
 			appendTens.innerHTML = tens;
 			}
 			
-			if(tens >99){
+			if(tens >60){
 				seconds++;
 				appendSeconds.innerHTML = "0" +seconds;
 				tens=0;
@@ -35,9 +38,13 @@ window.onload = function (){
 				appendSeconds.innerHTML = seconds;
 			}
 				
-				}
-				
+				}	
+					
 		}
+		
+	
+		
+		
 	
 	/*Button To  start Timer*/
 	
